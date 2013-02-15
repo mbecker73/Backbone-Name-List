@@ -1,0 +1,1 @@
+This simple JavaScript application creates a list of names rendered using backbone.js.  The user can sort the list by dragging and dropping the names (done using jQuery) and when a name is clicked, the user is alerted of the value of the name clicked.  Used as an introductory application to learning about backbone.js.  Developed by Matt Becker 
