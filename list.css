@@ -1,0 +1,25 @@
+ul{
+    list-style: none;
+}
+li {
+    border: 2px solid black;
+    background-color:#ffffff;
+    margin: 2px;
+    padding: 10px;
+    width: 135px;
+}
+.ui-state-highlight {
+    height: 1.5em;
+    line-height: 1.2em;
+    border: 2px solid #f5d656;
+    background-color: #fff8be;
+}
+
+.ui-sortable-helper  {
+    background-color:#f5d656;
+}
+
+body{
+    background-color: #d9d9d9;
+    margin: 20px;
+}
