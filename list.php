@@ -18,7 +18,7 @@
 ?>
 
 <script>
-	//create new array of Names from MySQL database
+	//create new js array of Names from MySQL database
 	 var nameList = <?php
             $names = array();
             while( $list = mysql_fetch_assoc($result) ) {

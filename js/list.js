@@ -1,4 +1,4 @@
-//Backbone.js custom code for drag and drop list of names
+//Backbone.js Model and View code for list of names
 
 //Name extends backbone's Model; contains basic name data
 var Name = Backbone.Model.extend({
@@ -51,50 +51,3 @@ var NameView = Backbone.View.extend({
         $(this.el).append(nameView.render().el);
     }
 });
-
-	
-//create new name collection instance
-/*var listOfNames = new NameCollection([
-    //id field for internal use only
-    {id: 1, name: "Steve Jobs"},
-    {id: 2, name: "Bill Gates"},
-    {id: 3, name: "Mark Zuckerberg"},
-    {id: 4, name: "Elon Musk"},
-    {id: 5, name: "Larry Paige"},
-    {id: 6, name: "Sergey Brin"},
-    {id: 7, name: "Larry Ellison"}
-]);
-
-var nameList = new Array();
-nameList[0] = "Steve Jobs";
-nameList[1] = "Bill Gates";
-nameList[2] = "Mark Zuckerberg";
-nameList[3] = "Elon Musk";
-nameList[4] = "Larry Paige";
-nameList[5] = "Sergey Brin";
-nameList[6] = "Larry Ellison";
-
-alert(nameList.length);
-
-var listOfNames = new NameCollection();
-for (var i = 0; i < nameList.length; i++) {
-    listOfNames.add(new Name({name: nameList[i]}));
-}
-
-
-
-//create new view instance to display the updated/sorted collection to html
-var viewOfNames = new NameListView({
-    el: '#name-view', //html element for view to be added to
-    collection: listOfNames //name of collection to be cycled through
-});
-//render the list of names to be shown through html
-viewOfNames.render();
-
-//jquery calls function when DOM is ready
-$(document).ready(function() {
-    $('#name-view').sortable({  //make the list sortable using drag and drop
-        placeholder: "ui-state-highlight" //adds highlighted placeholder
-    });
-});  
-*/  
