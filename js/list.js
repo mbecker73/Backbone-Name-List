@@ -52,8 +52,9 @@ var NameView = Backbone.View.extend({
     }
 });
 
+	
 //create new name collection instance
-var listOfNames = new NameCollection([
+/*var listOfNames = new NameCollection([
     //id field for internal use only
     {id: 1, name: "Steve Jobs"},
     {id: 2, name: "Bill Gates"},
@@ -63,6 +64,24 @@ var listOfNames = new NameCollection([
     {id: 6, name: "Sergey Brin"},
     {id: 7, name: "Larry Ellison"}
 ]);
+
+var nameList = new Array();
+nameList[0] = "Steve Jobs";
+nameList[1] = "Bill Gates";
+nameList[2] = "Mark Zuckerberg";
+nameList[3] = "Elon Musk";
+nameList[4] = "Larry Paige";
+nameList[5] = "Sergey Brin";
+nameList[6] = "Larry Ellison";
+
+alert(nameList.length);
+
+var listOfNames = new NameCollection();
+for (var i = 0; i < nameList.length; i++) {
+    listOfNames.add(new Name({name: nameList[i]}));
+}
+
+
 
 //create new view instance to display the updated/sorted collection to html
 var viewOfNames = new NameListView({
@@ -77,4 +96,5 @@ $(document).ready(function() {
     $('#name-view').sortable({  //make the list sortable using drag and drop
         placeholder: "ui-state-highlight" //adds highlighted placeholder
     });
-});    
+});  
+*/  
